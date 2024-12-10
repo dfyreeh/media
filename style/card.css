@@ -1,0 +1,320 @@
+.card__bloc {
+  padding: 5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__bloc card__bloc-1-img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.card__bloc h4 {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1b7fd0;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+.card__bloc p {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Arial Narrow";
+}
+
+.card__bloc ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+.card__bloc ul li {
+  width: 255px;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Arial Narrow";
+  text-align: left;
+}
+
+.card__bloc a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  padding: 5px 10px;
+  background-color: #1b7fd0;
+  transition: all 0.2s linear;
+}
+
+.card__bloc a:hover {
+  background-color: #008cff;
+}
+
+.card__bloc {
+  position: relative;
+  padding: 20px;
+}
+
+.card__element {
+  position: absolute;
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-top: 35px solid rgb(230, 230, 230);
+  border-right: 35px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+
+.card__bloc:hover .card__element {
+  display: block;
+}
+
+.card__bloc:hover {
+  position: relative;
+  background-color: rgb(230, 230, 230);
+  filter: drop-shadow(2px 3.464px 2px rgba(135, 135, 135, 0.75));
+}
+
+.card__bloc-1-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../img/Element1.svg);
+}
+.card__bloc:hover .card__bloc-1-img {
+  background-image: url(../img/Element1_dark.svg);
+}
+.card__bloc-2-img {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../img/Element2.svg);
+}
+.card__bloc:hover .card__bloc-2-img {
+  background-image: url(../img/Element2_dark.svg);
+}
+.card__bloc-3-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../img/Element3.svg);
+}
+.card__bloc:hover .card__bloc-3-img {
+  background-image: url(../img/Element3_dark.svg);
+}
+.card__bloc-4-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../img/Element4.svg);
+}
+.card__bloc:hover .card__bloc-4-img {
+  background-image: url(../img/Element4_dark.svg);
+}
+
+@media screen and (max-width: 992px) {
+  .card__bloc {
+    position: relative;
+    padding: 20px 150px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container__card-2 {
+    position: relative;
+  }
+
+  .conyainer__card-2__img-bloc {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card-2__img img {
+    width: 86px;
+  }
+
+ 
+
+  .card-2__img-img-1:hover {
+    content: url(../img/Element1_dark.svg);
+    margin-bottom: 400px;
+  }
+
+  .card-2__img-img-1:hover ~ .card-2__img-text-1{
+    display: block;
+  }
+
+  .card-2__img-img-2:hover {
+    content: url(../img/Element2_dark.svg);
+    margin-bottom: 300px;
+  }
+
+  .card-2__img-img-2:hover ~ .card-2__img-text-2{
+    display: block;
+  }
+
+  .card-2__img-img-3:hover {
+    content: url(../img/Element3_dark.svg);
+    margin-bottom: 400px;
+  }
+
+  .card-2__img-img-3:hover ~ .card-2__img-text-3{
+    display: block;
+  }
+
+  .card-2__img-img-4:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 300px;
+  }
+
+  .card-2__img-img-4:hover ~ .card-2__img-text-4{
+    display: block;
+  }
+
+
+  .card-2__img-text {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    background-color: rgb(216, 235, 252);
+    width: 90%;
+    padding: 20px 30px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+  }
+
+   
+  .card-2__img-text::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 7%;
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 28px solid rgb(216, 235, 252);
+  }
+
+  .card-2__img-text-2{
+    position: absolute;
+    left: 24px;
+  }
+
+  .card-2__img-text-2::before{
+    left: 32%;
+  }
+
+  .card-2__img-text-3{
+    position: absolute;
+    left: 24px;
+  }
+
+  .card-2__img-text-3::before{
+    left: 60%;
+  }
+
+
+  .card-2__img-text-4{
+    position: absolute;
+    left: 24px;
+  }
+
+  .card-2__img-text-4::before{
+    left: 86%;
+  }
+
+  .card-2__img-text h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-align: center;
+  }
+  .card-2__img-text p {
+    font-size: 16px;
+    color: #000000;
+    font-family: "Arial Narrow";
+  }
+
+  .card-2__img-text a {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 10px 30px;
+    padding: 10px 30px;
+    background-color: #1b7fd0;
+    text-decoration: none;
+  }
+
+
+}
+
+
+@media screen and (max-width: 400px){
+
+  .card-2__img img {
+    width: 75px;
+  }
+
+  .card-2__img-text {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    top: 110px;
+    text-align: center;
+    background-color: rgb(216, 235, 252);
+    width: 85%;
+    padding: 20px 30px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+  }
+
+  .card-2__img-text-1::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 5%;
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 28px solid rgb(216, 235, 252);
+  }
+
+  .card-2__img-img-1:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 450px;
+  }
+  .card-2__img-img-2:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 360px;
+  }
+  .card-2__img-img-3:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 450px;
+  }
+  .card-2__img-img-4:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 360px;
+  }
+}

@@ -1,0 +1,136 @@
+.cards-numbers {
+  margin-top: 30px;
+  background-image: url(../img/Bg2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1b7fd0;
+}
+
+.cards-numbers__h2 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background-color: #caddea;
+  height: 65px;
+  filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cards-numbers__h2::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 35px solid #caddea;
+  border-right: 35px solid transparent;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+}
+
+.cards-numbers__h2 h2 {
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #1b7fd0;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cards-numbers p {
+  font-size: 24px;
+  color: #e9f7fe;
+  font-family: "Arial Narrow";
+  margin-bottom: 20px;
+}
+
+.cards-numbers-p {
+  text-align: center;
+  margin-bottom: 20px 0 60px 0;
+}
+
+.cards-numbers-bloc-h2 {
+  padding: 0 7px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.cards-numbers-bloc-h2 h2 {
+  font-size: 25px;
+  color: #1b7fd0;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 992px) {
+  .cards-numbers__h2 h2 {
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    margin: 0 auto;
+  }
+  .cards-numbers__h2 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color: #caddea;
+    height: 45px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .cards-numbers__h2::before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid #caddea;
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 32px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards-numbers__h2 h2 {
+    font-size: 13px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    margin: 0 auto;
+  }
+  .cards-numbers p {
+    font-size: 14px;
+    color: #e9f7fe;
+    font-family: "Arial Narrow";
+    margin-bottom: 20px;
+  }
+  .cards-numbers-bloc-h2 h2 {
+    font-size: 15px;
+    color: #1b7fd0;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+.cards-numbers-bloc-h2 {
+  padding: 0px 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 7px;
+}
+}

@@ -1,0 +1,343 @@
+.price {
+  /* background-image: url(../img/main_bg_prise.png);
+  background-position: center;
+  background-repeat: no-repeat; */
+  position: relative;
+}
+
+.container-fluid__fon {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-position: center;
+}
+
+.price__text-container {
+  margin: 20px 0 40px;
+
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.price__text h2::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 35px solid #caddea;
+  border-right: 35px solid transparent;
+  position: relative;
+  top: 49px;
+  left: -5px;
+}
+
+.price__text {
+  padding: 5px;
+  background-color: #caddea;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #1b7fd0;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: left;
+}
+
+.OFF {
+  left: -1;
+  padding: 5px;
+  background-color: #caddea;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.OFF h2 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #075da2;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: left;
+}
+
+.OFF h2 span:nth-child(1) {
+  padding-right: 5px;
+  position: relative;
+  top: 5px;
+  text-align: center;
+  font-size: 49px;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  color: #dd0000;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.OFF h2 span:nth-child(2) {
+  padding-right: 5px;
+  font-size: 37px;
+  text-transform: uppercase;
+  color: #dd0000;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.OFF h2 span:nth-child(3) {
+  padding-right: 5px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #dd0000;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.price__text-container img {
+  width: 27px;
+  position: absolute;
+  top: 0px;
+  left: 55%;
+}
+
+.option {
+  margin: 0 0 50px 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+}
+
+.label__text {
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: left;
+}
+
+.option-text {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.option-text span {
+  font-size: 48px;
+  line-height: 45px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.option-text-2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.option-text-2 {
+  position: relative;
+  display: flex;
+
+  align-items: flex-end;
+}
+
+.option-text-2 p {
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  background-color: #dd0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-text-2::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 35px solid #dd0000;
+  border-right: 35px solid transparent;
+  position: absolute;
+  top: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .option {
+    margin: 0 0 50px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .option-text-2::before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid #dd0000;
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .price__text {
+    padding: 5px;
+    background-color: #caddea;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: left;
+  }
+  .OFF h2 span:nth-child(1) {
+    padding-right: 5px;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    color: #dd0000;
+    font-weight: 700;
+    font-family: "Roboto";
+  }
+  .OFF h2 span:nth-child(2) {
+    padding-right: 5px;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #dd0000;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+  .OFF h2 span:nth-child(3) {
+    padding-right: 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #dd0000;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+  .OFF h2 {
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #075da2;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: left;
+  }
+
+  .price__text h2 {
+    height: 34px;
+    padding: 0px;
+    background-color: #caddea;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: left;
+  }
+
+  .price__text-container {
+    margin: 12px 0 19px;
+    padding: 1px;
+    display: flex;
+    position: relative;
+  }
+  .price__text-container img {
+    width: 18px;
+    position: absolute;
+    top: 0px;
+    left: 55%;
+  }
+  .select {
+    width: 100%;
+    padding: 4px;
+  }
+  .label__text {
+    font-size: 11px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: left;
+  }
+
+  .option-text-2 p {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    background-color: #dd0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .option-text-2::before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid #dd0000;
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 38px;
+}
+.option-text span {
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+}
+
+
+@media screen and (max-width: 574px){
+  .option {
+    margin: 0 0 50px 0;
+    display: grid
+;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+.option-text-2::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 35px solid #dd0000;
+  border-right: 35px solid transparent;
+  position: absolute;
+  top: 18px;
+}
+}

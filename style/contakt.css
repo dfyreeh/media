@@ -1,0 +1,126 @@
+.contakt {
+  background-color: #caddea;
+  padding: 20px 0;
+}
+
+.container__contakt {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center;
+  flex-wrap: wrap; */
+}
+
+.contakt__bloc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contakt__bloc-2 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.contakt__bloc img {
+  width: 100px;
+  transition: all 0.1s linear;
+}
+
+.contakt__bloc a img:hover {
+  transform: scale(1.1);
+}
+
+.Facebook {
+  width: 20px;
+  transition: all 0.2s linear;
+}
+.Twiter {
+  width: 45px;
+  transition: all 0.2s linear;
+}
+.Pinterest {
+  transition: all 0.2s linear;
+  width: 35px;
+}
+
+.Facebook:hover {
+  content: url(../img/Facebook2.svg);
+  transform: scale(1.1);
+}
+.Twiter:hover {
+  content: url(../img/Twiter2.svg);
+  transform: scale(1.1);
+}
+.Pinterest:hover {
+  content: url(../img/Pinterest2.svg);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1199px) {
+  .contakt__bloc img {
+    width: 70px;
+    transition: all 0.1s linear;
+  }
+
+  .Facebook {
+    width: 13px;
+    transition: all 0.2s linear;
+  }
+
+  .Twiter {
+    width: 29px;
+    transition: all 0.2s linear;
+  }
+
+  .Pinterest {
+    transition: all 0.2s linear;
+    width: 21px;
+  }
+
+  .footer__bottom ul li a {
+    padding-right: 17px;
+    font-size: 12px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contakt__bloc img {
+    width: 45px;
+    transition: all 0.1s linear;
+  }
+  .Facebook {
+    width: 10px;
+    transition: all 0.2s linear;
+  }
+
+  .Twiter {
+    width: 20px;
+    transition: all 0.2s linear;
+  }
+  .Pinterest {
+    transition: all 0.2s linear;
+    width: 16px;
+  }
+  .contakt__bloc-2 {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .contakt__bloc {
+    display: none;
+  }
+  .container__contakt {
+    display: flex;
+    justify-content: center;
+  }
+ 
+}

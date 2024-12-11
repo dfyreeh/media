@@ -318,3 +318,31 @@
     margin-bottom: 360px;
   }
 }
+
+@media screen and (max-width: 338px){
+
+  .card-2__img-img-1:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 480px;
+  }
+  .card-2__img-img-2:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 380px;
+  }
+  .card-2__img-img-3:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 480px;
+  }
+  .card-2__img-img-4:hover {
+    content: url(../img/Element4_dark.svg);
+    margin-bottom: 380px;
+  }
+
+}
+
+@media screen and (max-width: 335px) {
+  .card-2__img img {
+    width: 59px;
+  }
+ 
+}

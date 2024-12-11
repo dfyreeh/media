@@ -105,7 +105,7 @@
 @media screen and (max-width: 768px) {
   .cards-numbers__h2 h2 {
     font-size: 13px;
-    line-height: 32px;
+    line-height: 13px;
     text-transform: uppercase;
     color: #1b7fd0;
     font-weight: 700;
@@ -132,5 +132,20 @@
   display: inline-block;
   margin-top: 4px;
   margin-bottom: 7px;
+}
+}
+
+@media screen and (max-width: 335px) {
+  
+  .cards-numbers__h2 h2 {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    margin: 0 auto;
+    z-index: 2;
 }
 }

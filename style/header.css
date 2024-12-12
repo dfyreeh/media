@@ -43,9 +43,13 @@ header .login_and_chat {
   width: 33%;
 }
 
-@media screen and (max-width: 1199px){
-    
+.logo-media {
+  width: 162px;
+  position: absolute;
+  top: 8px;
+}
 
+@media screen and (max-width: 1199px) {
 }
 
 header .login,
@@ -113,65 +117,55 @@ header .live_chat:hover {
 }
 
 @media screen and (max-width: 575px) {
-   .phone {
-     
+  .phone {
     width: 250px;
-   text-align: end;
-    
-
-    
-     
+    text-align: end;
   }
 
-  .container__phone{
+  .container__phone {
     display: flex;
     justify-content: flex-end;
   }
 
-   .phone span,
-   .phone a {
+  .phone span,
+  .phone a {
     font-size: 15px;
     color: #caddea;
     font-weight: 250;
     font-family: Roboto_Regular;
   }
-   .phone a {
+  .phone a {
     color: #caddea;
     text-decoration: none;
     margin-right: 10px;
   }
 
- .nav__img{
+  .nav__img {
     float: right;
- }
+  }
 
- .baner ul{
-     margin-left: 10px;
-
- }
-  .btn__margen{
+  .baner ul {
+    margin-left: 10px;
+  }
+  .btn__margen {
     display: flex;
   }
 
-   
- .btn__margen{
+  .btn__margen {
     grid-column: 8;
- }
- 
+  }
 }
 
-@media screen and (max-width: 510px){
-    .baner ul li {
-        font-size: 12px;
-        line-height: 33px;
-        color: #000;
-        font-family: Roboto-Medium;
-    }
+@media screen and (max-width: 510px) {
+  .baner ul li {
+    font-size: 12px;
+    line-height: 33px;
+    color: #000;
+    font-family: Roboto-Medium;
+  }
 }
 
-.btn__margen{
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
+.btn__margen {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
 }
-
- 
